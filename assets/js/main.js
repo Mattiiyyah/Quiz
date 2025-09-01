@@ -147,6 +147,14 @@ function principalAtivacao() {
                     botao.disabled = true;
                 });
 
+                perguntaAtualIndex++;
+                const listaDePerguntas = document.querySelectorAll('.container-de-pergunta');
+
+                if (perguntaAtualIndex < listaDePerguntas.length) {
+                    const proximaPergunta = listaDePerguntas[perguntaAtualIndex];
+                    proximaPergunta.classList.remove('pergunta-bloqueada');
+                }
+
                 //escolha final para comparação
                 const escolha = el.textContent;
 
@@ -164,15 +172,6 @@ function principalAtivacao() {
                     botaoFinalizar.classList.remove('d-none');
 
                 }
-
-                perguntaAtualIndex++;
-                const listaDePerguntas = document.querySelectorAll('.container-de-pergunta');
-
-                if (perguntaAtualIndex < listaDePerguntas.length) {
-                    const proximaPergunta = listaDePerguntas[perguntaAtualIndex];
-                    proximaPergunta.classList.remove('pergunta-bloqueada');
-                }
-
 
             }
         });
