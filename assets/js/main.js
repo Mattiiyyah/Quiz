@@ -71,9 +71,6 @@ function principalAtivacao() {
                 quizPerguntas.classList.add('pergunta-bloqueada');
             }
 
-           
-
-
             //(armazendo) - entregando as resposta do quiz para um dataset
             quizPerguntas.dataset.resposta = umaPergunta.resposta;
 
