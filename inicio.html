@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conhecimento</title>
+
+    <!--link de acesso ao boodstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- icone -->
+    <link rel="icon" href="assets/img/duvida.png">
+
+</head>
+
+<body style="background: rgb(116, 163, 243);">
+
+    <section class="container-fluid d-flex justify-content-center align-items-center mt-5">
+
+        <div class="card w-100 mb-5 shadow-lg" style="max-width: 700px;">
+            <div class="card-body">
+                <div class="text-center mt-3 mb-5">
+                    <h2 class="card-title d-inline p-2 shadow-sm rounded text-light"
+                        style="background-color: rgb(80, 199, 250);"> Quiz de Raciocínio Lógico </h2>
+
+                </div>
+
+                <div id="quiz-container"></div>
+            </div>
+
+
+            <div class="text-center mb-4">
+                <button id="btn-finalizar" class="btn btn-danger btn-lg d-none" data-bs-toggle="modal" data-bs-target="#modalResultado">
+                    Finalizar Quiz
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalResultado" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz Finalizado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modal-corpo-resultado">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.reload()">
+                        Recomeçar
+                    </button>
+
+                    <a href="index.html" type="button" class="btn btn-danger" role="button">
+                        Voltar a Tela Inicial
+                    <a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+
+    <!-- JS do boodstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
